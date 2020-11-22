@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="temp_app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Jennifer's Conversion Site</title>
+    </head>
+    <body>
+        <!--NAVIGATION-->
+        <header class="header-img" id="home">
+                <div class="navbar-fixed">
+                    <nav class="black">
+                        <div class="container">
+                            <div class="nav-wrapper">
+                                <a href="#" class="brand-logo">2204mph</a>
+                                <a href="#" class="sidenav-trigger" data-target="links"><i class="material-icons transparent">menu</i></a>
+                                <ul  class="right hide-on-med-and-down">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#temperature">Temperature</a></li>
+                                    <li><a href="#length">Length</a></li>
+                                    <li><a href="#weight">Weight</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <ul class="sidenav" id="links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#temperature">Temperature</a></li>
+                        <li><a href="#length">Length</a></li>
+                        <li><a href="#weight">Weight</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+        
+                           
+            <div class="white-text center">
+                <h1>Welcome to my conversion site</h1>
+                <h3>How to use:</h3>
+                <ul>
+                    <li>Scroll down to any section of your choice.</li>
+                    <li>Enter a value.</li>
+                    <li>Click the corresponding button for instant results!</li>
+                </ul>
+                <h4>Happy Conversion!!</h4>
+        </header>
+        
+        <!--SECTIONS-->
+        <div class="container">
+            <div class="divider"></div>
+            <div class="section">
+            <h4>TEMPERATURE</h4>
+            <h5>Celsuis</h5>
+            <div id="celsius">
+                <input type="number" class="browser-default" name="celsius" >
+            </div><br>
+
+            <h5>Farenheit</h5>
+            <div id="fahrenheit">
+                <input type="number" class="browser-default" name="fahrenheit" >
+            </div><br>
+
+            <h5>Kelvin</h5>
+            <div id="kelvin">
+                <input type="number" class="browser-default" name="kelvin" >
+            </div><br>
+
+            <!---LENGTH-->
+            <div class="section">
+            <h4>LENGTH</h4>
+            <h5>Centimeter</h5>
+            <div id="centimeter">
+                <input type="number" class="browser-default" name="centimeter" >
+            </div><br>
+
+            <h5>Meter</h5>
+            <div id="meter">
+                <input type="number" class="browser-default" name="meter" >
+            </div><br>
+
+            <h5>Feet</h5>
+            <div id="feet">
+                <input type="number" class="browser-default" name="feet" >
+            </div><br>
+
+            <!--WEIGHT-->
+            <!-- <div class="section">
+                <h4>WEIGHT</h4>
+                <h5>Kilogram</h5>
+                <div id="kilogram">
+                    <input type="number" class="browser-default" name="kilogram" >
+                </div><br>
+    
+                <h5>Pounds</h5>
+                <div id="pounds">
+                    <input type="number" class="browser-default" name="pounds" >
+                </div><br>
+        </div> -->
+
+        <!--Footer-->
+        <footer>
+            <div>
+                <p>Designed by Iroh Jennifer for <a href="https://pearlsafrica.org/" class="grey-text">Pearls Africa</a></p>
+            </div>
+            <a href="https://www.linkedin.com/in/jennifer-iroh-68a179185/" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/Justwannacode?s=08" class="fa fa-twitter"></a>
+            <a href="https://github.com/Iroh-Jennifer" class="fa fa-github"></a>
+        </footer>
+
+
+        
+        <!--Javascript-->
+        <script src="temp_app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script> 
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });              
+        </script>
+        
+    
+    </body>
+</html>
